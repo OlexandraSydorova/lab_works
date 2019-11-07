@@ -10,17 +10,10 @@ def cycled_input(text):
     return int(numb)
 
 
-while True:
-        a = cycled_input("Введіть перший член прогресії ")
-        d = cycled_input("Введіть різницю прогресії ")
-        n = cycled_input("Введіть число членів прогресії ")
-        print("Сума членів прогресії")
-        s = ((2 * a + d * (n - 1)) / 2) * n
-        print(s)
-        print("Для продовження введіть 1\nДля виходу введіть 0")
-        b = input()
-        while b != "1" and b != "0":
-            print("Ви ввели некоректні дані")
-            b = input()
-        if b == 0:
-            break
+a = cycled_input("Введіть перший член прогресії ")
+d = cycled_input("Введіть різницю прогресії ")
+n = cycled_input("Введіть число членів прогресії ")
+print("Сума членів прогресії")
+s = ((2 * a + d * (n - 1)) / 2) * n
+print(s)
+
