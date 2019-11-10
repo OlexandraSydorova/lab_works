@@ -2,7 +2,7 @@ print("Сидорова Олександра Сергіївна\nЛаборат�
 from math import sin
 import re
 def is_float(numb):
-    return bool(re.match(r"^[+-]{0,1}\d+.{0,1}\d+", numb))
+    return bool(re.match(r"^[+-]{0,1}\d+\.{0,1}\d*$", numb))
 def cycled_input(text):
     numb = input(text)
     while not is_float(numb):
