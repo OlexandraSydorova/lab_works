@@ -1,5 +1,10 @@
 print("Сидорова Олександра Сергіївна\nЛабораторна робота №3 \nВаріант 18 \nПеревірка відповідності відкриваючих і закриваючих дужок \n")
 def counting(expression):
+    """
+    
+    :param expression:
+    :return:
+    """
     count1 = 0
     count2 = 0
     for elem in expression:

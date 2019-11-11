@@ -1,4 +1,4 @@
-print("Сидорова Олександра Сергіївна\nЛабораторна робота №1 \nВаріант 18 \nВизначення введеного символу \n")
+"""Написати програму-фільтр, яка при натисканні будь-яких клавіш виводить на екран тільки букви і цифри, при цьому вказуючи, що виводиться: буква або цифра."""
 import re
 from validators.validators_library import validator
 from validators.validators_library import re_symbol

@@ -1,3 +1,4 @@
+"""Обчислити за допомогою оператора for"""
 import re
 from validators.validators_library import validator
 from validators.validators_library import re_int
