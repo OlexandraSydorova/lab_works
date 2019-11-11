@@ -1,9 +1,10 @@
-print("Сидорова Олександра Сергіївна\nЛабораторна робота №3 \nВаріант 18 \nПеревірка відповідності відкриваючих і закриваючих дужок \n")
+"""Перевірити у математичному вираженні, заданому рядком, відповідність відкриваючих і закриваючих дужок."""
+"""Порахувати кількість відкриваючих і закриваючих дужок і перевірити чи рівні ці два числа"""
 def counting(expression):
     """
-    
-    :param expression:
-    :return:
+Ця функція рахує кількість відкриваючих і закриваючих дужок і перевіряє на рівність цих чисел
+    :param expression: str
+    :return: True or False
     """
     count1 = 0
     count2 = 0
@@ -12,13 +13,15 @@ def counting(expression):
             count1 += 1
         if elem == ')':
             count2 += 1
-    return count1,count2
+    if count1 == count2:
+        return True
+    elif count1 != count2:
+        return False
 
 expr = input("Введіть математичне вираження ")
-count1,count2 = counting(expr)
-if count1 == count2:
+if counting(expr):
     print("Ви ввели правильний математичний вираз")
-elif count1 != count2:
+elif not counting(expr):
    print("Ви ввели не правильний математичний вираз")
 
 
