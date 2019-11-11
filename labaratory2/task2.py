@@ -1,13 +1,8 @@
 import re
-def is_int(numb):
-    return bool(re.match(r"^\d+$", numb))
-def cycled_input(text):
-    numb = input(text)
-    while not is_int(numb):
-        numb = input(text)
-    return int(numb)
-count = cycled_input("Введіть кількість ітерацій ")
-x = cycled_input("Введіть x ")
+from validators.validators_library import validator
+from validators.validators_library import re_int
+count = int(validator(re_int,"Введіть кількість ітерацій "))
+x = int(validator(re_int,"Введіть x "))
 result = 1
 for i in range(1,count):
     result *= x/2**i

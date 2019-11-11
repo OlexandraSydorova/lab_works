@@ -1,14 +1,9 @@
 print("Сидорова Олександра Сергіївна\nЛабораторна робота №1 \nВаріант 18 \nВизначення введеного символу \n")
 import re
-def is_symbol(symbol):
-    return bool(re.match(r"^.{1}$", symbol))
-def cycled_input(text):
-    symbol = input(text)
-    while not is_symbol(symbol):
-        symbol = input(text)
-    return symbol
+from validators.validators_library import validator
+from validators.validators_library import re_symbol
 
-x = cycled_input("Введіть символ ")
+x = validator(re_symbol,"Введіть символ ")
 if x.isdigit():
     print("Ви ввели цифру")
 elif x.isalpha():
